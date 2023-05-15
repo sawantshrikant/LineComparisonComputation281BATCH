@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Program
 {
@@ -6,17 +6,25 @@ public class Program
     {
         Console.WriteLine("Welcome to Line Comparison Computation Program!");
 
-        double x1 = 2;
-        double y1 = 3;
-        double x2 = 4;
-        double y2 = 5;
+        // Line 1
+        Console.WriteLine("Enter the coordinates of the first point of Line 1 (x1, y1):");
+        double x1 = Convert.ToDouble(Console.ReadLine());
+        double y1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Enter the coordinates of the second point of Line 1 (x2, y2):");
+        double x2 = Convert.ToDouble(Console.ReadLine());
+        double y2 = Convert.ToDouble(Console.ReadLine());
 
         double length1 = CalculateLineLength(x1, y1, x2, y2);
 
-        double a1 = 1;
-        double b1 = 2;
-        double a2 = 5;
-        double b2 = 7;
+        // Line 2
+        Console.WriteLine("Enter the coordinates of the first point of Line 2 (a1, b1):");
+        double a1 = Convert.ToDouble(Console.ReadLine());
+        double b1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Enter the coordinates of the second point of Line 2 (a2, b2):");
+        double a2 = Convert.ToDouble(Console.ReadLine());
+        double b2 = Convert.ToDouble(Console.ReadLine());
 
         double length2 = CalculateLineLength(a1, b1, a2, b2);
 
@@ -34,3 +42,4 @@ public class Program
         return length;
     }
 }
+
